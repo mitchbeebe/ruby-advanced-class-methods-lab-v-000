@@ -32,7 +32,6 @@ class Song
     @@all.each do |x|
       if x.name == name
         x
-      end
       else
         false
       end
