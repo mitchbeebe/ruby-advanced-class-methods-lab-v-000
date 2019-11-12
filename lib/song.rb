@@ -55,5 +55,9 @@ class Song
     s.artist_name = x[0].strip
     s
   end
+  
+  def self.create_from_filename(name)
+    
+  end
 
 end
