@@ -50,8 +50,10 @@ class Song
   end
   
   def self.new_from_filename(name)
-    s = name.gsub('.mp3', '').split(/\W+/)
-    self.create_by_name(s[0])
+    x = name.gsub('.mp3', '').split(/\W+/)
+    s = self.create_by_name(x[0])
+    s.artist_name = x[1]
+    s
   end
 
 end
