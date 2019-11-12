@@ -33,7 +33,10 @@ class Song
       if x.name == name
         x
       end
-      break
+      else
+        false
+      end
+      
     end
   end
   
